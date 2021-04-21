@@ -1,18 +1,8 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+import useResources from "./useResources";
 
 const APIRequest = ({ resourceName }) => {
-
-  const [resources, setResources] = useState([]);
-  const fetch = async (resourceName) => {
-    const response = await axios.get(
-      `https://jsonplaceholder.typicode.com/${resourceName}`
-    );
-    setResources(response.data);
-  };
-  useEffect(() => {
-    fetch(resourceName);
-  }, [resourceName]);
+  const resources = useResources(resourceName);
 
   return (
     <div>
