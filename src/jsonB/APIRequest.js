@@ -11,6 +11,10 @@ const APIRequest = ({ resourceName }) => {
           <li key={res.id}> {res.title} </li>
         ))}
       </ul>
+
+
+
+      
     </div>
   );
 };

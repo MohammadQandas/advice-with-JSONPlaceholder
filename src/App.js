@@ -1,16 +1,16 @@
 import React from "react";
-import Main from "./jsonB/Main";
+import Advice from "./adviceSection/Advice";
 
 const App = () => {
   return (
-    <div>
+    <div >
       <div
-        style={{ marginLeft: "550px", color: "steelblue", fontSize: "35px" }} >
-            JSONPlaceholderAPI
+        style={{ marginLeft: "43%", color: "steelblue", fontSize: "45px" ,paddingTop:"40px",fontStyle:'oblique'}} >
+            Advice API
       </div>
-      <div>
-        <Main />
-      </div>
+    
+      <Advice/>
+     
     </div>
   );
 };

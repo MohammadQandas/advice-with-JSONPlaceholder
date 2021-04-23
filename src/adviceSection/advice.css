@@ -1,0 +1,61 @@
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  background: url('../assets/wall1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.app {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(44, 0, 0);
+    background: whitesmoke;
+    font-size: 30px;
+    margin-top: 150px;  
+    flex-wrap: wrap;
+    width: 80%;
+    min-height: 100px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: rgb(0, 27, 49) 5px 5px;
+    font-family:'Times New Roman', Times, serif;
+
+  }
+.button1 {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+button{
+   font-size: large;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-stretch: wider;
+word-spacing: 2px;
+border-radius: 40px;
+background: rgb(80, 79, 78);
+
+
+}
+button:hover{
+    animation:  animation 1s ease-in-out ;
+}
+@keyframes animation {
+    from {
+     transform: rotateY(0deg);
+    }to{
+transform: rotateY(360deg);
+    }
+}
